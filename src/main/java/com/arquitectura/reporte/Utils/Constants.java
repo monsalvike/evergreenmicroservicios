@@ -9,4 +9,8 @@ public class Constants {
     public static String AND = " and ";
     public static String SQLCONSULTIDREPORTE = "select id from solicitud_reporte order by id desc limit 1";
 
+    public static String DNSDATABASE = "srv-evergreen.database.windows.net";
+    public static String USUARIO = "azureuser";
+    public static String PASS = "Q1w2e3r4123.*";
+
 }
