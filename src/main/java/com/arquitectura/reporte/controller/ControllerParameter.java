@@ -31,4 +31,10 @@ public class ControllerParameter {
     public ArrayNode getanio() {
         return myService.getParameter("anio");
     }
+
+    @GetMapping("/prueba")
+    public String prueba() {
+        return "Prueba desde la nube";
+    }
+
 }
