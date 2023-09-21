@@ -32,19 +32,4 @@ public class ControllerData {
     public ArrayNode guardarinfo(@RequestBody ReporteInfo reporteInfo) {
         return Dbsave.withinfo(reporteInfo);
     }
-
-    @GetMapping("/getrubro")
-    public ArrayNode getRubro() {
-        return myService.getParameter("rubro");
     }
-
-    @GetMapping("/getsubregion")
-    public ArrayNode getSubregion() {
-        return myService.getParameter("subregion");
-    }
-
-    @GetMapping("/getanio")
-    public ArrayNode getanio() {
-        return myService.getParameter("anio");
-    }
-}

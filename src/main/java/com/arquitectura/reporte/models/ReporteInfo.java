@@ -49,7 +49,7 @@ public class ReporteInfo {
 
     @Override
     public String toString() {
-        return "Insert into public.solicitud_reporte (nombreReporte,stringConsulta,formato,usuarioSolicita) VALUES (" +
+        return "Insert into Tbl_solicitud_reporte (nombrereporte,stringconsulta,formato,usuario) VALUES (" +
                 "'" + nombreReporte + "'," +
                 "'" + stringConsulta + "'," +
                 "'" + formato + "'," +

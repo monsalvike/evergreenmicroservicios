@@ -23,7 +23,7 @@ public class Dbsave {
     public static void updateSolicitud(String sqlQuery, String id) {
 
         Connection connection = DbConnection.getConnection();
-        String sql = "UPDATE solicitud_reporte SET stringconsulta  = '" + sqlQuery.replace("'", " ") + "' WHERE id = " + id;
+        String sql = "UPDATE Tbl_solicitud_reporte SET stringconsulta  = '" + sqlQuery.replace("'", " ") + "' WHERE id = " + id;
         try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.executeUpdate();
         } catch (SQLException e) {

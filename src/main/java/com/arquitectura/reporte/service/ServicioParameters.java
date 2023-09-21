@@ -9,7 +9,8 @@ import org.springframework.stereotype.Service;
 public class ServicioParameters {
 
     public ArrayNode getParameter(String parameter) {
-        String sql = "select distinct " + parameter + " from cultivos_agricolas group by " + parameter;
+        String sql = "select distinct " + parameter + " from Tbl_Cultivos_Agricolas group by " + parameter;
+        System.out.println(sql);
         return JsonConvert.jsonReponse(DbConsult.consultDB(sql));
     }
 
