@@ -11,7 +11,7 @@ public class DbConnection {
     public static Connection getConnection() {
         Connection connection = null;
         try {
-            connection = DriverManager.getConnection(URL, USER, PASSWORD);
+            connection = DriverManager.getConnection(Constants.DNSDATABASE, Constants.USUARIO, Constants.PASS);
         } catch (SQLException e) {
             System.err.println("Error al conectar a la base de datos: " + e.getMessage());
         }
