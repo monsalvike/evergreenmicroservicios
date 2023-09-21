@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ServicioData {
-usted 
 
     public ArrayNode getData(String rubro, String subregion, String ano, String id) {
         StringBuilder queryBuilder = new StringBuilder(Constants.SQLCONSULTPARAMS);
