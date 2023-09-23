@@ -3,12 +3,11 @@ package com.arquitectura.reporte.controller;
 import com.arquitectura.reporte.Utils.Dbsave;
 import com.arquitectura.reporte.models.ReporteInfo;
 import com.arquitectura.reporte.service.ServicioData;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.sql.SQLException;
 
 @RestController
 @RequestMapping("/reporte")
@@ -29,7 +28,7 @@ public class ControllerData {
     }
 
     @PostMapping("/solicitud")
-    public ArrayNode guardarinfo(@RequestBody ReporteInfo reporteInfo) {
+    public ArrayNode guardarinfo(@RequestBody ReporteInfo reporteInfo) throws JsonProcessingException {
         return Dbsave.withinfo(reporteInfo);
     }
-    }
+}

@@ -12,6 +12,7 @@ public class Dbsave {
     public static ArrayNode withinfo(ReporteInfo info) {
         Connection connection = DbConnection.getConnection();
         String sql = info.toString();
+        System.out.println(sql);
         try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.executeUpdate();
             return JsonConvert.jsonReponse(DbConsult.consultDB(Constants.SQLCONSULTIDREPORTE));
