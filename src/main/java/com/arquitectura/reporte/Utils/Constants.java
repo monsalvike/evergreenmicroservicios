@@ -1,7 +1,7 @@
 package com.arquitectura.reporte.Utils;
 
 public class Constants {
-    public static String SQLCONSULTPARAMS = "select rubro, subregion, municipio, anio as año,area_total as area_Predio, area-produccion, volumen_produccion from Tbl_Cultivos_Agricolas ";
+    public static String SQLCONSULTPARAMS = "select * from Tbl_Cultivos_Agricolas ";
     public static String WHERE = " where ";
     public static String RUBRO = " rubro = ";
     public static String SUBREGION = " subregion = ";
